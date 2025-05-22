@@ -1,0 +1,12 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; }
+nav { background: #222; }
+.nav-list { display: flex; list-style: none; }
+.nav-list a { flex:1; padding:1rem; color:#fff; text-align:center; text-decoration:none; }
+.nav-list a:hover { background:#333; }
+main { padding:2rem; }
+.section-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; }
+.card img, .card video, .card a { width:100%; border-radius:8px; }
+.card p { margin-top:0.5rem; text-align:center; }
+@media(max-width:600px){ .nav-list{ flex-direction:column; } }

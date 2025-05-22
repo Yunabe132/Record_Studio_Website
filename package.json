@@ -1,0 +1,16 @@
+{
+  "name": "webtoon-showcase",
+  "version": "1.0.0",
+  "description": "A clean, responsive showcase for original art, animations, webtoons, and games.",
+  "scripts": {
+    "build": "tsc",
+    "start": "http-server .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d ."
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "http-server": "^14.1.1",
+    "typescript": "^4.9.5"
+  }
+}

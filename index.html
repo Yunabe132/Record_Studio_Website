@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Record Studio</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script defer type="module" src="src/main.ts"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#" data-section="art">Art</a></li>
+        <li><a href="#" data-section="animations">Animations</a></li>
+        <li><a href="#" data-section="webtoon">Webtoon</a></li>
+        <li><a href="#" data-section="games">Games</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+
+  <!-- Component Templates -->
+  <template id="art-item-template">
+    <div class="card">
+      <img />
+      <p class="caption"></p>
+    </div>
+  </template>
+
+  <template id="animation-item-template">
+    <div class="card">
+      <video controls></video>
+      <p class="caption"></p>
+    </div>
+  </template>
+
+  <template id="webtoon-page-template">
+    <div class="card">
+      <img />
+      <p class="caption"></p>
+    </div>
+  </template>
+
+  <template id="game-link-template">
+    <div class="card">
+      <a class="game-link"></a>
+    </div>
+  </template>
+</body>
+</html>
